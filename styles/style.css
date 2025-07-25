@@ -13,68 +13,248 @@ body {
 
 }
 
+.margin-for-all {
+    margin: 0 190px;
+
+}
+
+.display-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+.des-color{
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.white-color {
+    color: white;
+}
+.comla-color {
+    color: rgb(221, 58, 33);
+}
+
 .btn-color {
-    color: #E6533C;
+    color: rgb(221, 58, 33);
 }
 
 .btn-primary {
-    border-radius: 46px;
-    background: #E6533C;
-    padding: 8px 20px 8px 20px;
+    border-radius: 42px;
+    background: rgb(221, 58, 33);
+    padding: 12px 50px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+}
+
+#btn-white {
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.197);
+
 
 }
+
+
 
 /* Nav bar style */
-.header{
-    margin:0 190px
-}
 .nav-bar {
-    display: flex;
+    color: white;
     justify-content: space-between;
-    max-width: 1660px;
-    margin: 57px auto 32px;
-    align-items: center;
 }
 
-.logo {
-    width: 55%;
-    font-size: 2.5rem;
+.brand-name {
+    font-size: 2rem;
     font-weight: 800;
+    font-style: italic;
+    width: 55%;
+
+}
+
+.nav-item {
+    list-style: none;
+
+    /* border: 2px soldi rgb(119, 11, 11); */
 
 }
 
 .nav-links {
     width: 45%;
-    box-sizing: border-box;
-    border: 2px solid rgba(255, 255, 255, 0.197);
-    border-radius: 39px;
-
-
-}
-
-.nav-links ul {
-    display: flex;
     justify-content: space-between;
-    padding: 0 4px;
-    align-items: center;
-    margin: 4px 0;
+    padding-left: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    border-radius: 39px;
+    margin: 0;
+    padding: 4px 25px 4px 4px;
 }
 
-.nav-links ul li {
-    list-style: none;
-    ;
-}
-
-.nav-links a {
+.nav-link {
     text-decoration: none;
     color: white;
-    font-size: 1.25rem;
     font-weight: 400;
-    padding: 6px 12px;
+    font-size: 1.2rem;
+    margin: 12px 0px;
+}
+
+.home {
+    border-radius: 46px;
+    background: rgb(221, 58, 33);
+    padding: 8px 20px;
+}
+
+
+.nav-bar,
+.header-container {
+    max-width: 1060px;
+    margin: 0px auto;
+}
+
+.nav-link:hover {
+    border-radius: 46px;
+    background: rgb(221, 58, 33);
+    padding: 8px 20px;
+}
+
+
+
+
+
+
+
+/* header container style */
+.header-container {
+    color: white;
+    justify-content: space-between;
+    margin: 0 auto;
 
 }
-.nav-links a:hover{
-        border-radius: 46px;
-    background: #E6533C;
-    padding: 8px 20px 8px 20px;
+
+.header-container1 {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-title {
+    font-size: 4.8rem;
+    font-weight: 900;
+    margin-bottom: 28px;
+
+}
+
+.header-description {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0px 0px 28px 0px;
+}
+.header-button{
+    gap: 30px;
+}
+
+.header-img {
+    width: 100%;
+    /* border: 1px solid white; */
+    /* margin-left: 175px; */
+}
+.video-badge{
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(255, 255, 255, 0.1);
+padding: 17px 25px;
+text-align: left;
+  position: absolute;
+  margin-top: 120px;
+  margin-left:-120px
+}
+#badge1-number{
+    font-size:2.2rem;
+    font-weight:900;
+  
+}
+.badge-des{
+    font-size: .9rem;
+    font-weight: 400px;
+    color: rgba(239, 237, 232, 0.65);
+}
+
+.video-badge2{
+    box-sizing: border-box;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(48, 48, 48, 0.54);
+padding: 20px 25px;
+text-align: left;
+gap: 20px;
+position: absolute;
+margin-top: -160px;
+margin-left: -110px;
+}
+#color{
+width:40px;
+height: 40px;
+background-color:rgb(221, 58, 33) ;
+border-radius: 50%;
+}
+#badge2-number{
+    font-size:1.5rem;
+    font-weight:900;
+  
+}
+.badge2-des{
+    font-size: 1rem;
+    font-weight: 400px;
+    color: rgba(239, 237, 232, 0.65);
+}
+
+.three-dots{
+    display: none;
+      font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* media for mobile */
+@media screen and (max-width: 768px ){
+
+    .header-container{
+        flex-direction: column;
+    }
+
+    .nav-links{
+        display: none;
+    }
+    .three-dots{
+        display: block;
+    }
+    .margin-for-all {
+        margin: 0 20px;
+    }
+    .header-title{
+        max-width:290px ;
+        font-size: 2.8rem;;
+    }
+    .header-description{
+        max-width: 275px;
+    }
+    .header-container2{
+        margin-top: 48px;
+    }
+    .video-badge{
+        margin-left: -170px;
+        margin-top: 30px;
+        padding: 10px 17px;
+    }
+    .video-badge2{
+        margin-top: -360px;
+        margin-left: 7px;
+        padding: 15px 17px;
+    }
+
 }
