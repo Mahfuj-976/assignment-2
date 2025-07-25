@@ -22,16 +22,26 @@ body {
     display: flex;
 }
 
+.display-grid {
+    display: grid;
+}
+
 .align-center {
     align-items: center;
 }
-.des-color{
+
+.text-center {
+    text-align: center;
+}
+
+.des-color {
     color: rgba(255, 255, 255, 0.5)
 }
 
 .white-color {
     color: white;
 }
+
 .comla-color {
     color: rgb(221, 58, 33);
 }
@@ -150,111 +160,236 @@ body {
     font-weight: 400;
     margin: 0px 0px 28px 0px;
 }
-.header-button{
+
+.header-button {
     gap: 30px;
 }
 
 .header-img {
     width: 100%;
-    /* border: 1px solid white; */
-    /* margin-left: 175px; */
 }
-.video-badge{
-border: 1px solid rgba(255, 255, 255, 0.1);
-border-radius: 12px;
-backdrop-filter: blur(20px);
-background: rgba(255, 255, 255, 0.1);
-padding: 17px 25px;
-text-align: left;
-  position: absolute;
-  margin-top: 120px;
-  margin-left:-120px
+
+.video-badge {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 17px 25px;
+    text-align: left;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: -120px
 }
-#badge1-number{
-    font-size:2.2rem;
-    font-weight:900;
-  
+
+#badge1-number {
+    font-size: 2.2rem;
+    font-weight: 900;
+
 }
-.badge-des{
+
+.badge-des {
     font-size: .9rem;
     font-weight: 400px;
     color: rgba(239, 237, 232, 0.65);
 }
 
-.video-badge2{
+.video-badge2 {
     box-sizing: border-box;
-border: 1px solid rgba(255, 255, 255, 0.1);
-border-radius: 12px;
-backdrop-filter: blur(20px);
-background: rgba(48, 48, 48, 0.54);
-padding: 20px 25px;
-text-align: left;
-gap: 20px;
-position: absolute;
-margin-top: -160px;
-margin-left: -110px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    padding: 20px 25px;
+    text-align: left;
+    gap: 20px;
+    position: absolute;
+    margin-top: -160px;
+    margin-left: -110px;
 }
-#color{
-width:40px;
-height: 40px;
-background-color:rgb(221, 58, 33) ;
-border-radius: 50%;
+
+#color {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(221, 58, 33);
+    border-radius: 50%;
 }
-#badge2-number{
-    font-size:1.5rem;
-    font-weight:900;
-  
+
+#badge2-number {
+    font-size: 1.5rem;
+    font-weight: 900;
+
 }
-.badge2-des{
+
+.badge2-des {
     font-size: 1rem;
     font-weight: 400px;
     color: rgba(239, 237, 232, 0.65);
 }
 
-.three-dots{
+.three-dots {
     display: none;
-      font-size: 26px;
-  color: white;
-  cursor: pointer;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
 }
 
 
 
-/* media for mobile */
-@media screen and (max-width: 768px ){
+/* Habit style */
+.section-title {
+    font-size: 3rem;
+    font-weight: 900;
+}
 
-    .header-container{
+.habit-des {
+    max-width: 670px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+}
+
+.habit-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.habit-img {
+    border-radius: 50%;
+}
+
+.habit-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.habit-des {
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media for mobile */
+@media screen and (max-width: 768px) {
+
+    .header-container {
         flex-direction: column;
     }
 
-    .nav-links{
+    .nav-links {
         display: none;
     }
-    .three-dots{
+
+    .three-dots {
         display: block;
     }
+
     .margin-for-all {
         margin: 0 20px;
     }
-    .header-title{
-        max-width:290px ;
-        font-size: 2.8rem;;
+
+    .header-title {
+        max-width: 290px;
+        font-size: 2.8rem;
+        ;
     }
-    .header-description{
+
+    .header-description {
         max-width: 275px;
     }
-    .header-container2{
+
+    .header-container2 {
         margin-top: 48px;
     }
-    .video-badge{
+
+    .video-badge {
         margin-left: -170px;
         margin-top: 30px;
         padding: 10px 17px;
     }
-    .video-badge2{
+
+    .video-badge2 {
         margin-top: -360px;
         margin-left: 7px;
         padding: 15px 17px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 14px;
+    }
+
+    .habit-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+.habit-box{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+}
+
+
+
+/* query for medium devices */
+@media screen and (min-width:768px) and (max-width: 1024px) {
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .margin-for-all {
+        margin: 0 40px;
+    }
+
+    .header-title {
+
+        width: 100%;
+    }
+
+    .header-description {
+        width: 100%;
+    }
+
+    .header-container2 {
+        margin-top: 98px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-img {
+        width: 50%;
+
+    }
+
+    .video-badge2 {
+        margin-top: -270px;
+        margin-left: 160px;
+    }
+    
+    .habit-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
